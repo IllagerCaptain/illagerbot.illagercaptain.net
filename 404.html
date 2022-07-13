@@ -3,12 +3,24 @@
   <link rel="icon" href="illagerbot.ico" />
 </head>
 <style>
-  @font-face {font-family: Minecraft; src: url('Minecraft.otf');} 
-  @font-face {font-family: MinecraftItalic; src: url('MinecraftItalic.otf');} 
-  body {font-family: Minecraft;color: #aaaaaa;background-color: #2a2a2a;}
-  font2 {font-family: MinecraftItalic;}
+  @font-face {font-family: Terminal; src: url('terminal.ttf');} 
+  body {cursor: default; font-family: Terminal; color: #00ff00; background-color: #000000;}
+  a {color: inherit; cursor: pointer;}
 </style>
-<body>
-  <h1 style="text-align: center;">Error 404</h1>
+<body onkeydown="fart()">
+  <h1>Error 404</h1>
+  <p>Press any key to continue . . . <span id="blink">_</span></p>
+  <script type="text/javascript">
+    var blink = document.getElementById('blink');
+    setInterval(function() {
+      blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+    }, 530);
+  </script>
+  <script>
+    function fart() {
+      var audio = new Audio('fart.mp3');
+      audio.play();
+    }
+  </script>
 </body>
   

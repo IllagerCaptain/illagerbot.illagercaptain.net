@@ -3,13 +3,19 @@
   <link rel="icon" href="illagerbot.ico" />
 </head>
 <style>
-  @font-face {font-family: Minecraft; src: url('Minecraft.otf');} 
-  @font-face {font-family: MinecraftItalic; src: url('MinecraftItalic.otf');} 
-  body {font-family: Minecraft;color: #aaaaaa;background-color: #2a2a2a;}
-  font2 {font-family: MinecraftItalic;}
+  @font-face {font-family: Terminal; src: url('terminal.ttf');} 
+  body {cursor: default; font-family: Terminal; color: #00ff00; background-color: #000000;}
+  a {color: inherit; cursor: pointer;}
 </style>
 <body>
-  <h1 style="text-align: center;">IllagerBot</h1>
-  <h2 style="text-align: center;">Add Bot</h1>
+  <h1>IllagerBot</h1>
+  <h2><a href="https://discord.com/api/oauth2/authorize?client_id=985644168774811648&permissions=1374524140564&scope=bot%20applications.commands">Add Bot</a></h1>
+  <p>C:\<span id="blink">_</span></p>
+  <script type="text/javascript">
+    var blink = document.getElementById('blink');
+    setInterval(function() {
+      blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+    }, 530);
+  </script>
 </body>
   
