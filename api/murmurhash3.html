@@ -1,0 +1,13 @@
+<head>
+  <script src="murmurhash-js/murmurhash3_gc.js"></script>
+</head>
+<body>
+  <p id="query"></p>
+  <script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    let text = murmurhash3_32_gc(params.query, 0);
+    document.getElementById("query").innerHTML = text;
+  </script>
+</body>

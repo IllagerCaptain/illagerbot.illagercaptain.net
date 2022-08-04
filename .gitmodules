@@ -1,0 +1,3 @@
+[submodule "api/murmurhash-js"]
+	path = api/murmurhash-js
+	url = https://github.com/mikolalysenko/murmurhash-js
