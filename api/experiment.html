@@ -1,0 +1,17 @@
+<head>
+  <script src="murmurhash-js/murmurhash3_gc.js"></script>
+</head>
+<body>
+  <p>{"experiment":"<span id="experiment"></span>","guild":"<span id="guild"></span>","id":"<span id="id"></span>"}</p>
+  <script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    let experiment = params.experiment;
+    document.getElementById("experiment").innerHTML = experiment;
+    let guild = params.snowflake;
+    document.getElementById("guild").innerHTML = guild;
+    let text = (murmurhash3_32_gc(params.experiment + ':' + params.snowflake, 0) % 10000);
+    document.getElementById("id").innerHTML = text;
+  </script>
+</body>
