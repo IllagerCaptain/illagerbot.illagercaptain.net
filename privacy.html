@@ -1,22 +1,14 @@
 <head>
   <title>Privacy Policy</title>
   <link rel="icon" href="/illagerbot.ico" />
+  <link rel="stylesheet" href="main.css">
 </head>
-<style>
-  @font-face {font-family: Terminal; src: url('terminal.ttf');} 
-  body {cursor: default; font-family: Terminal; color: #00ff00; background-color: #000000;}
-  a {color: inherit; cursor: pointer;}
-</style>
 <body>
   <h1>IllagerBot Privacy Policy</h1>
   <p>All data is kept in a private database, and shall only be stored for when it is needed. It is then deleted.</p>
   <h3>Details:</h3>
   <p>Message content may be checked for filtering purposes. The bot will check for messages matching specific regular expressions and discard anything not matched by said regex. You may see our regexes and when they are used <a href="./privacy/regex">here</a>.</p>
+  <p>Cookies eaten are tracked. The bot does not know who ate the cookie and all statistics related are anonymous. To opt out simply do not use <a>/bubble_wrap</a> or <a>/suspicious_wrap</a> commands.
   <p>C:\<span id="blink">_</span></p>
-  <script type="text/javascript">
-    var blink = document.getElementById('blink');
-    setInterval(function() {
-      blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-    }, 530);
-  </script>
+  <script src="blink.js"></script>
 </body>

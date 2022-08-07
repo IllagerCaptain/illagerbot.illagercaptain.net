@@ -1,26 +1,12 @@
 <head>
   <title>404</title>
   <link rel="icon" href="/illagerbot.ico" />
+  <link rel="stylesheet" href="main.css">
 </head>
-<style>
-  @font-face {font-family: Terminal; src: url('terminal.ttf');} 
-  body {cursor: default; font-family: Terminal; color: #00ff00; background-color: #000000;}
-  a {color: inherit; cursor: pointer;}
-</style>
 <body onkeydown="fart()">
   <h1>Error 404</h1>
   <p>Press any key to continue . . . <span id="blink">_</span></p>
-  <script type="text/javascript">
-    var blink = document.getElementById('blink');
-    setInterval(function() {
-      blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-    }, 530);
-  </script>
-  <script>
-    function fart() {
-      var audio = new Audio('/fart.mp3');
-      audio.play();
-    }
-  </script>
+  <script src="blink.js"></script>
+  <script src="fart.js"></script>
 </body>
   
