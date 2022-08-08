@@ -1,0 +1,4 @@
+@font-face {font-family: Terminal; src: url('terminal.ttf');} 
+body {cursor: default; font-family: Terminal; color: #00ff00; background-color: #000000;}
+a {color: inherit; cursor: pointer; background-color: inherit; text-decoration: underline;}
+u {color: inherit; cursor: pointer; background-color: #00FF0040; text-decoration: none;}
